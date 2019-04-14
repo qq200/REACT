@@ -1,13 +1,19 @@
 //din package-ul "react" importeaza clasa Component
 import React, {Component} from 'react'
 
+let likes=0;
+
 class Button extends Component{
+    // constructor(){
+    //     this.likes=0;
+    // }
     doIt(){
-        alert("Yess")
+        likes++;
+        console.log(this.likes);
     }
     render(){
         return(
-            <button onClick={this.doIt}> OK</button>
+            <button onClick={this.doIt}>I like</button>
         )
     }
 }
